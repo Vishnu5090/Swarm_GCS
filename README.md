@@ -82,20 +82,3 @@ disarm                # DISARM
 ```
 
 ---
-
-## Project Structure
-```
-src/
-├── App.jsx                    # Root layout, telemetry state
-├── hooks/useWebSocket.js      # WebSocket auto-reconnect hook
-└── components/
-    ├── ConnectionBar.jsx      # Top bar with connect UI
-    ├── DraggablePanel.jsx     # Resizable/draggable window wrapper
-    ├── HUD.jsx                # Canvas-based artificial horizon
-    ├── MapView.jsx            # Google Maps satellite + drone marker
-    ├── TelemetryPanel.jsx     # Colored gauges
-    ├── ActionsPanel.jsx       # ARM/DISARM/TAKEOFF/LAND/RTL/mode
-    ├── MessagesPanel.jsx      # STATUSTEXT message log
-    └── StatusBar.jsx          # Bottom status strip
-server.js                      # Node.js MAVLink ↔ WebSocket bridge
-```
